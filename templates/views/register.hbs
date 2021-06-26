@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$AlphaBits</title>
+    <link rel="stylesheet" href = "../public/css/styles.css">
+    {{>header}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<form class="row g-3 needs-validation" novalidate action="/register" method="POST">
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip01" class="form-label">Name</label>
+    <input type="text" class="form-control" id="validationTooltip01"name="firstname" value=""/>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip02" class="form-label">Email</label>
+    <input type="text" class="form-control" id="validationTooltip02" name="email" value=""/>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltipUsername" class="form-label" >Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+      <input type="text" class="form-control" name="username" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend"/>
+      <div class="invalid-tooltip">
+        Please choose a unique and valid username.
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip01" class="form-label">Phone</label>
+    <input type="text" class="form-control" id="validationTooltip01"name="phone" value=""/>
+  </div>
+   <div class="col-md-4 position-relative">
+    <label for="validationTooltip01" class="form-label">Password</label>
+    <input type="text" class="form-control" id="validationTooltip01"name="password" value=""/>
+  </div>
+  <div class="col-md-4 position-relative">
+    <label for="validationTooltip02" class="form-label" >Confirm Password</label>
+    <input type="text" class="form-control" id="validationTooltip02"name="confirmpassword" value="" />
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit" value="Register">Register</button>
+  </div>
+</form>
+
+</body>
+</html>

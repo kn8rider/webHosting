@@ -1,0 +1,21 @@
+{
+  "name": "restApi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "Khem",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "mongoose": "^5.12.14",
+    "validator": "^13.6.0"
+  }
+}
