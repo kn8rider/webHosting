@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/studentsApi",{
+const DB = 'mongodb+srv://kn8Rider:twIVfr1YEKuoz63I@cluster0.fezsl.mongodb.net/EmployeeApi?retryWrites=true&w=majority';
+mongoose.connect(DB,{
     useCreateIndex:true,
     useNewUrlParser:true,
     useUnifiedTopology:true,
