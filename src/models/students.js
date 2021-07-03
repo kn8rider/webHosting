@@ -36,5 +36,5 @@ const studentSchema = new mongoose.Schema({
 })
 
 //we will create a new collection
-const Student = new mongoose.model('Student',studentSchema);
+const Student = new mongoose.model('Employee',studentSchema);
 module.exports = Student;
